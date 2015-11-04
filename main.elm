@@ -24,5 +24,5 @@ form time =
     [  ngon 4 100
        |> filled red
        |> rotate angleRad
-       |> move (-500 + (time * 0.09), 0)
+       |> move (-750 + toFloat (round (time * 0.1) % 1500), 0)
     ]
